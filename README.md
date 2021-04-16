@@ -82,9 +82,7 @@ Init Metasploit web service: `msfdb --component webservice init`
 Start Metasploit web service to listen all network interfaces: `msfdb --component webservice --address 0.0.0.0 start`
 
 <details><summary>Init MSF webservice:</summary>
-<div>
-
-```shell
+<pre lang="shell"><code>
 $ msfdb --component webservice init
 Running the 'init' command for the webservice:
 [?] Initial MSF web service account username? [user]: user
@@ -116,9 +114,7 @@ The username and password are credentials for the API account:
 https://localhost:5443/api/v1/auth/account
 
 ====================================================================
-```
-
-</div>
+</code></pre>
 
 </details>
 
@@ -190,7 +186,7 @@ Create workspace:
 New workspace: Msf.Workspace(id=210, name='test_workspace', created_at=None, updated_at=None, boundary=None, description=None, owner_id=None, limit_to_network=False, import_fingerprint=False)
 </code></pre>
 
-![Create workspace](images/create_workspace.png)
+<img src="images/create_workspace.png" alt="Create workspace">
 
 </details>
 

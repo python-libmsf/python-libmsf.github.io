@@ -81,7 +81,8 @@ Init Metasploit web service: `msfdb --component webservice init`
 
 Start Metasploit web service to listen all network interfaces: `msfdb --component webservice --address 0.0.0.0 start`
 
-<details><summary>Init MSF webservice:</summary><pre><code class="shell">
+<details><summary>Init MSF webservice:</summary>
+<pre language="shell"><code>
 $ msfdb --component webservice init
 Running the 'init' command for the webservice:
 [?] Initial MSF web service account username? [user]: user
@@ -117,10 +118,7 @@ https://localhost:5443/api/v1/auth/account
 
 Metasploit web service user API token stored in file: `~/.msf4/config`
 
-<details>
-  <summary markdown="span">MSF webservice config:</summary>
-
-```shell
+<details><summary markdown="span">MSF webservice config:</summary><pre><code class="shell">
 $ cat ~/.msf4/config
 [framework/database]
 default_db=local-https-data-service
@@ -130,9 +128,7 @@ url=https://localhost:5443
 cert=/home/user/.msf4/msf-ws-cert.pem
 skip_verify=true
 api_token=cf2dbb7f9d1f92839a84f9c165ee9afef3dd3a3116bc99badf45be4ae5655168c9c2c3c58621b460
-```
-
-</details>
+</code></pre></details>
 
 Metasploit web service swagger page: `https://localhost:5443/api/v1/api-docs`
 

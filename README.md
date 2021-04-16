@@ -82,44 +82,39 @@ Init Metasploit web service: `msfdb --component webservice init`
 Start Metasploit web service to listen all network interfaces: `msfdb --component webservice --address 0.0.0.0 start`
 
 <details><summary>Init MSF webservice:</summary>
-<p>
+<pre language="shell"><code>
+$ msfdb --component webservice init
+Running the 'init' command for the webservice:
+[?] Initial MSF web service account username? [user]: user
+[?] Initial MSF web service account password? (Leave blank for random password):
+Generating SSL key and certificate for MSF web service
+Attempting to start MSF web service...success
+MSF web service started and online
+Creating MSF web service user user
 
-    ```shell
-    $ msfdb --component webservice init
-    Running the 'init' command for the webservice:
-    [?] Initial MSF web service account username? [user]: user
-    [?] Initial MSF web service account password? (Leave blank for random password):
-    Generating SSL key and certificate for MSF web service
-    Attempting to start MSF web service...success
-    MSF web service started and online
-    Creating MSF web service user user
-    
-        ############################################################
-        ##              MSF Web Service Credentials               ##
-        ##                                                        ##
-        ##        Please store these credentials securely.        ##
-        ##    You will need them to connect to the webservice.    ##
-        ############################################################
-    
-    MSF web service username: user
-    MSF web service password: password
-    MSF web service user API token: cf2dbb7f9d1f92839a84f9c165ee9afef3dd3a3116bc99badf45be4ae5655168c9c2c3c58621b460
-    
-    
-    MSF web service configuration complete
-    The web service has been configured as your default data service in msfconsole with the name "local-https-data-service"
-    
-    If needed, manually reconnect to the data service in msfconsole using the command:
-    db_connect --token cf2dbb7f9d1f92839a84f9c165ee9afef3dd3a3116bc99badf45be4ae5655168c9c2c3c58621b460 --cert /home/user/.msf4/msf-ws-cert.pem --skip-verify https://localhost:5443
-    
-    The username and password are credentials for the API account:
-    https://localhost:5443/api/v1/auth/account
-    
-    ====================================================================
-    ```
+    ############################################################
+    ##              MSF Web Service Credentials               ##
+    ##                                                        ##
+    ##        Please store these credentials securely.        ##
+    ##    You will need them to connect to the webservice.    ##
+    ############################################################
 
-</p>
-</details>
+MSF web service username: user
+MSF web service password: password
+MSF web service user API token: cf2dbb7f9d1f92839a84f9c165ee9afef3dd3a3116bc99badf45be4ae5655168c9c2c3c58621b460
+
+
+MSF web service configuration complete
+The web service has been configured as your default data service in msfconsole with the name "local-https-data-service"
+
+If needed, manually reconnect to the data service in msfconsole using the command:
+db_connect --token cf2dbb7f9d1f92839a84f9c165ee9afef3dd3a3116bc99badf45be4ae5655168c9c2c3c58621b460 --cert /home/user/.msf4/msf-ws-cert.pem --skip-verify https://localhost:5443
+
+The username and password are credentials for the API account:
+https://localhost:5443/api/v1/auth/account
+
+====================================================================
+</code></pre></details>
 
 Metasploit web service user API token stored in file: `~/.msf4/config`
 

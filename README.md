@@ -82,6 +82,7 @@ Init Metasploit web service: `msfdb --component webservice init`
 Start Metasploit web service to listen all network interfaces: `msfdb --component webservice --address 0.0.0.0 start`
 
 <details><summary>Init MSF webservice:</summary>
+
 <pre lang="shell"><code>
 $ msfdb --component webservice init
 Running the 'init' command for the webservice:
@@ -193,7 +194,7 @@ New workspace: Msf.Workspace(id=210, name='test_workspace', created_at=None, upd
 Get workspaces:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 
 ```shell
@@ -207,7 +208,7 @@ All workspaces: [Msf.Workspace(id=1, name='default', created_at='2021-02-16T16:4
 Delete workspace:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 
 ```shell
@@ -216,7 +217,7 @@ Delete workspace:
 Removed workspace: Msf.Workspace(id=210, name='test_workspace', created_at='2021-04-16T13:28:17.841Z', updated_at='2021-04-16T13:28:17.841Z', boundary=None, description=None, owner_id=None, limit_to_network=False, import_fingerprint=False)
 ```
 
-![Delete workspace](images/delete_workspace.png)
+<img src="images/delete_workspace.png" alt="Delete workspace">
 
 </details>
 
@@ -269,7 +270,7 @@ print(f'Removed hosts: {removed_hosts}\n')
 Create host:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> from libmsf.msf import Msf
@@ -306,14 +307,14 @@ Create host:
 New host: Msf.Host(id=220, workspace='test_workspace', created_at=None, host=None, address='192.168.1.1', mac='00:11:22:33:44:55', comm='unittest', name='unit.test.com', state='alive', os_name='linux', os_flavor='test', os_sp='test', os_lang='English', arch='x86', workspace_id=-1, updated_at=None, purpose='device', info='Host for unit tests', comments='Host for unit tests', scope='unit tests scope', virtual_host='unittest', note_count=0, vuln_count=0, service_count=0, host_detail_count=0, exploit_attempt_count=0, cred_count=0, detected_arch=None, os_family='posix')
 ```
 
-![Create host](images/create_host.png)
+<img src="images/create_host.png" alt="Create host">
 
 </details>
 
 Get hosts:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> new_host: Msf.Host = msf_rest_api.get_host_by_id(workspace=workspace.name, host_id=host.id)
@@ -331,7 +332,7 @@ All hosts: [Msf.Host(id=220, workspace=None, created_at='2021-04-16T13:03:43.816
 Delete host:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> removed_hosts: List[Msf.Host] = msf_rest_api.delete_hosts(ids=[host.id])
@@ -339,7 +340,7 @@ Delete host:
 Removed hosts: [Msf.Host(id=220, workspace=None, created_at='2021-04-16T13:03:43.816Z', host=None, address='192.168.1.1', mac='00:11:22:33:44:55', comm='unittest', name='unit.test.com', state='alive', os_name='linux', os_flavor='test', os_sp='test', os_lang='English', arch='x86', workspace_id=206, updated_at='2021-04-16T13:03:43.816Z', purpose='device', info='Host for unit tests', comments='Host for unit tests', scope='unit tests scope', virtual_host='unittest', note_count=0, vuln_count=0, service_count=0, host_detail_count=0, exploit_attempt_count=0, cred_count=0, detected_arch='', os_family='posix')]
 ```
 
-![Delete host](images/delete_host.png)
+<img src="images/delete_host.png" alt="Delete host">
 
 </details>
 
@@ -383,7 +384,7 @@ print(f'Removed services: {removed_services}\n')
 Create service:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> from libmsf.msf import Msf
@@ -411,14 +412,14 @@ Create service:
 New service: Msf.Service(id=249, workspace='test_workspace', host='192.168.1.1', host_id=-1, created_at=None, port=12345, proto='tcp', state='open', name='http', updated_at=None, info='Unit test')
 ```
 
-![Create service](images/create_service.png)
+<img src="images/create_service.png" alt="Create service">
 
 </details>
 
 Get services:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> new_service: Msf.Service = msf_rest_api.get_service_by_id(workspace=workspace.name, service_id=service.id)
@@ -436,7 +437,7 @@ All services: [Msf.Service(id=249, workspace=None, host=Msf.Host(id=224, workspa
 Delete service:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> removed_services: List[Msf.Service] = msf_rest_api.delete_services(ids=[service.id])
@@ -444,7 +445,7 @@ Delete service:
 Removed services: [Msf.Service(id=249, workspace=None, host=None, host_id=224, created_at='2021-04-16T13:36:13.731Z', port=12345, proto='tcp', state='open', name='http', updated_at='2021-04-16T13:36:13.731Z', info='Unit test')]
 ```
 
-![Delete service](images/delete_service.png)
+<img src="images/delete_service.png" alt="Delete service">
 
 </details>
 
@@ -488,7 +489,7 @@ print(f'Removed vulns: {removed_vulns}\n')
 Create vulnerability:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> from libmsf.msf import Msf
@@ -516,14 +517,14 @@ Create vulnerability:
 New vuln: Msf.Vuln(id=272, workspace='test_workspace', host='192.168.1.1', host_id=-1, port=12345, service_id=-1, created_at=None, name='Unit test vuln name', updated_at=None, info='Unit test vuln info', exploited_at=None, vuln_detail_count=0, vuln_attempt_count=0, origin_id=None, origin_type=None, refs=['CVE-2020-2020', 'URL-https://unit.test.com/vuln'], module_refs=None)
 ```
 
-![Create vuln](images/create_vuln.png)
+<img src="images/create_vuln.png" alt="Create vuln">
 
 </details>
 
 Get vulnerabilities:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> new_vuln: Msf.Vuln = msf_rest_api.get_vuln_by_id(workspace=workspace.name, vuln_id=vuln.id)
@@ -541,7 +542,7 @@ All vulns: [Msf.Vuln(id=272, workspace=None, host=Msf.Host(id=226, workspace=Non
 Delete vulnerability:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> removed_vulns: List[Msf.Vuln] = msf_rest_api.delete_vulns(ids=[vuln.id])
@@ -549,7 +550,7 @@ Delete vulnerability:
 Removed vulns: [Msf.Vuln(id=272, workspace=None, host=Msf.Host(id=226, workspace=None, created_at='2021-04-16T13:46:17.284Z', host=None, address='192.168.1.1', mac='00:11:22:33:44:55', comm='unittest', name='unit.test.com', state='alive', os_name='linux', os_flavor='test', os_sp='test', os_lang='English', arch='x86', workspace_id=214, updated_at='2021-04-16T13:46:17.284Z', purpose='device', info='Host for unit tests', comments='Host for unit tests', scope='unit tests scope', virtual_host='unittest', note_count=0, vuln_count=0, service_count=1, host_detail_count=0, exploit_attempt_count=0, cred_count=0, detected_arch='', os_family='posix'), host_id=226, port=-1, service_id=251, created_at='2021-04-16T13:47:50.763Z', name='Unit test vuln name', updated_at='2021-04-16T13:47:50.763Z', info='Unit test vuln info', exploited_at=None, vuln_detail_count=0, vuln_attempt_count=0, origin_id=None, origin_type=None, refs=[], module_refs=[])]
 ```
 
-![Delete vuln](images/delete_vuln.png)
+<img src="images/delete_vuln.png" alt="Delete vuln">
 
 </details>
 
@@ -596,7 +597,7 @@ print(f'Removed loots: {removed_loots}\n')
 Create loot:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> from libmsf.msf import Msf
@@ -627,14 +628,14 @@ Create loot:
 New loot: Msf.Loot(id=61, workspace='test_workspace', workspace_id=-1, host='192.168.1.1', host_id=-1, port=12345, service_id=-1, created_at=None, updated_at=None, ltype='unit.test.type', path='path.txt', data='dGVzdA==', content_type='text/plain', name='/tmp/unit.test', info='Unit test file', module_run_id=None)
 ```
 
-![Create loot](images/create_loot.png)
+<img src="images/create_loot.png" alt="Create loot">
 
 </details>
 
 Get loots:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> new_loot: Msf.Loot = msf_rest_api.get_loot_by_id(workspace=workspace.name, loot_id=loot.id)
@@ -652,7 +653,7 @@ All loots: [Msf.Loot(id=61, workspace=None, workspace_id=215, host=Msf.Host(id=2
 Delete loot:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> removed_loots: List[Msf.Loot] = msf_rest_api.delete_loots(ids=[loot.id])
@@ -660,7 +661,7 @@ Delete loot:
 Removed loots: [Msf.Loot(id=None, workspace=None, workspace_id=215, host=None, host_id=227, port=-1, service_id=None, created_at=None, updated_at=None, ltype='unit.test.type', path='/Users/vladimir/.msf4/loot/6f8c35d43dc702b3b866-path.txt', data='dGVzdA==', content_type='text/plain', name='/tmp/unit.test', info='Unit test file', module_run_id=None)]
 ```
 
-![Delete loot](images/delete_loot.png)
+<img src="images/delete_loot.png" alt="Delete loot">
 
 </details>
 
@@ -702,7 +703,7 @@ print(f'Removed notes: {removed_notes}\n')
 Create note:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> from libmsf.msf import Msf
@@ -728,14 +729,14 @@ Create note:
 New note: Msf.Note(id=40, workspace='test_workspace', workspace_id=-1, host='192.168.1.1', host_id=-1, service_id=-1, created_at=None, updated_at=None, ntype='host.comments', data='Unit test host comment', critical=False, seen=False)
 ```
 
-![Create note](images/create_note.png)
+<img src="images/create_note.png" alt="Create note">
 
 </details>
 
 Get notes:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> new_note: Msf.Note = msf_rest_api.get_note_by_id(workspace=workspace.name, note_id=note.id)
@@ -753,7 +754,7 @@ All notes: [Msf.Note(id=40, workspace=None, workspace_id=215, host=Msf.Host(id=2
 Delete note:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> removed_notes: List[Msf.Note] = msf_rest_api.delete_notes(ids=[note.id])
@@ -761,7 +762,7 @@ Delete note:
 Removed notes: [Msf.Note(id=40, workspace=None, workspace_id=215, host=None, host_id=227, service_id=None, created_at='2021-04-16T14:03:46.116Z', updated_at='2021-04-16T14:03:46.116Z', ntype='host.comments', data='Unit test host comment', critical=None, seen=None)]
 ```
 
-![Delete note](images/delete_note.png)
+<img src="images/delete_note.png" alt="Delete note">
 
 </details>
 
@@ -833,7 +834,7 @@ print(f'Removed creds: {removed_creds}\n')
 Create credentials and login:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> from libmsf.msf import Msf
@@ -882,14 +883,14 @@ New cred: Msf.Cred(id=68, workspace_id=215, username='UnitTestUser', private_dat
 New login: Msf.Login(id=78, workspace_id=215, core_id=68, service_id=-1, last_attempted_at='2021-01-01T11:11:11.111Z', address='192.168.1.1', service_name='http', port=12345, protocol='tcp', status='Successful', access_level='admin', public=None, private=None, created_at=None, updated_at=None)
 ```
 
-![Create cred](images/create_cred.png)
+<img src="images/create_cred.png" alt="Create cred">
 
 </details>
 
 Get credentials and logins:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> new_login: Msf.Login = msf_rest_api.get_login_by_id(login_id=login.id)
@@ -917,7 +918,7 @@ All creds: [Msf.Cred(id=68, workspace_id=215, username=None, private_data=None, 
 Delete credentials and login:
 
 <details>
-  <summary markdown="span">Example:</summary>
+  <summary>Example:</summary>
 
 ```shell
 >>> removed_logins: List[Msf.Login] = msf_rest_api.delete_logins(ids=[login.id])
@@ -930,6 +931,6 @@ Removed logins: [Msf.Login(id=78, workspace_id=-1, core_id=68, service_id=252, l
 Removed creds: [Msf.Cred(id=68, workspace_id=215, username=None, private_data=None, private_type=None, jtr_format=None, address=None, port=-1, service_name=None, protocol=None, origin_type='Metasploit::Credential::Origin::Service', module_fullname=None, created_at='2021-04-16T14:15:36.173Z', updated_at='2021-04-16T14:15:36.173Z', origin_id=77, private_id=2, public_id=5, realm_id=None, logins_count=0, logins=None, public=None, private=None, origin=None)]
 ```
 
-![Delete cred](images/delete_cred.png)
+<img src="images/delete_cred.png" alt="Delete cred">
 
 </details>

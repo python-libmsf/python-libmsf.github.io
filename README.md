@@ -6,13 +6,13 @@ python-libmsf
 [![License][license-label]][license-link]
 [![Version][version-label]][version-link]
 
-[os-label]: images/labels/os.svg
+[os-label]: https://python-libmsf.github.io/images/labels/os.svg
 [os-link]: https://en.wikipedia.org/wiki/Operating_system
-[python3-versions-label]: images/labels/python3.svg
+[python3-versions-label]: https://python-libmsf.github.io/images/labels/python3.svg
 [python3-versions-link]: https://www.python.org/downloads/release/python-360/
-[license-label]: images/labels/license.svg
+[license-label]: https://python-libmsf.github.io/images/labels/license.svg
 [license-link]: https://github.com/python-libmsf/python-libmsf/blob/main/LICENSE
-[version-label]: images/labels/version.svg
+[version-label]: https://python-libmsf.github.io/images/labels/version.svg
 [version-link]: https://github.com/python-libmsf/python-libmsf/releases
 
 ## Description

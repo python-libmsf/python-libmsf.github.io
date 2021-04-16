@@ -187,7 +187,7 @@ Create workspace:
 New workspace: Msf.Workspace(id=210, name='test_workspace', created_at=None, updated_at=None, boundary=None, description=None, owner_id=None, limit_to_network=False, import_fingerprint=False)
 </code></pre>
 
-<img src="images/create_workspace.png" alt="Create workspace">
+<img src="https://python-libmsf.github.io/images/create_workspace.png" alt="Create workspace">
 
 </details>
 
@@ -217,7 +217,7 @@ Delete workspace:
 Removed workspace: Msf.Workspace(id=210, name='test_workspace', created_at='2021-04-16T13:28:17.841Z', updated_at='2021-04-16T13:28:17.841Z', boundary=None, description=None, owner_id=None, limit_to_network=False, import_fingerprint=False)
 </code></pre>
 
-<img src="images/delete_workspace.png" alt="Delete workspace">
+<img src="https://python-libmsf.github.io/images/delete_workspace.png" alt="Delete workspace">
 
 </details>
 
@@ -307,7 +307,7 @@ Create host:
 New host: Msf.Host(id=220, workspace='test_workspace', created_at=None, host=None, address='192.168.1.1', mac='00:11:22:33:44:55', comm='unittest', name='unit.test.com', state='alive', os_name='linux', os_flavor='test', os_sp='test', os_lang='English', arch='x86', workspace_id=-1, updated_at=None, purpose='device', info='Host for unit tests', comments='Host for unit tests', scope='unit tests scope', virtual_host='unittest', note_count=0, vuln_count=0, service_count=0, host_detail_count=0, exploit_attempt_count=0, cred_count=0, detected_arch=None, os_family='posix')
 </code></pre>
 
-<img src="images/create_host.png" alt="Create host">
+<img src="https://python-libmsf.github.io/images/create_host.png" alt="Create host">
 
 </details>
 
@@ -340,7 +340,7 @@ Delete host:
 Removed hosts: [Msf.Host(id=220, workspace=None, created_at='2021-04-16T13:03:43.816Z', host=None, address='192.168.1.1', mac='00:11:22:33:44:55', comm='unittest', name='unit.test.com', state='alive', os_name='linux', os_flavor='test', os_sp='test', os_lang='English', arch='x86', workspace_id=206, updated_at='2021-04-16T13:03:43.816Z', purpose='device', info='Host for unit tests', comments='Host for unit tests', scope='unit tests scope', virtual_host='unittest', note_count=0, vuln_count=0, service_count=0, host_detail_count=0, exploit_attempt_count=0, cred_count=0, detected_arch='', os_family='posix')]
 </code></pre>
 
-<img src="images/delete_host.png" alt="Delete host">
+<img src="https://python-libmsf.github.io/images/delete_host.png" alt="Delete host">
 
 </details>
 
@@ -412,7 +412,7 @@ Create service:
 New service: Msf.Service(id=249, workspace='test_workspace', host='192.168.1.1', host_id=-1, created_at=None, port=12345, proto='tcp', state='open', name='http', updated_at=None, info='Unit test')
 </code></pre>
 
-<img src="images/create_service.png" alt="Create service">
+<img src="https://python-libmsf.github.io/images/create_service.png" alt="Create service">
 
 </details>
 
@@ -445,7 +445,7 @@ Delete service:
 Removed services: [Msf.Service(id=249, workspace=None, host=None, host_id=224, created_at='2021-04-16T13:36:13.731Z', port=12345, proto='tcp', state='open', name='http', updated_at='2021-04-16T13:36:13.731Z', info='Unit test')]
 </code></pre>
 
-<img src="images/delete_service.png" alt="Delete service">
+<img src="https://python-libmsf.github.io/images/delete_service.png" alt="Delete service">
 
 </details>
 
@@ -517,7 +517,7 @@ Create vulnerability:
 New vuln: Msf.Vuln(id=272, workspace='test_workspace', host='192.168.1.1', host_id=-1, port=12345, service_id=-1, created_at=None, name='Unit test vuln name', updated_at=None, info='Unit test vuln info', exploited_at=None, vuln_detail_count=0, vuln_attempt_count=0, origin_id=None, origin_type=None, refs=['CVE-2020-2020', 'URL-https://unit.test.com/vuln'], module_refs=None)
 </code></pre>
 
-<img src="images/create_vuln.png" alt="Create vuln">
+<img src="https://python-libmsf.github.io/images/create_vuln.png" alt="Create vuln">
 
 </details>
 
@@ -550,7 +550,7 @@ Delete vulnerability:
 Removed vulns: [Msf.Vuln(id=272, workspace=None, host=Msf.Host(id=226, workspace=None, created_at='2021-04-16T13:46:17.284Z', host=None, address='192.168.1.1', mac='00:11:22:33:44:55', comm='unittest', name='unit.test.com', state='alive', os_name='linux', os_flavor='test', os_sp='test', os_lang='English', arch='x86', workspace_id=214, updated_at='2021-04-16T13:46:17.284Z', purpose='device', info='Host for unit tests', comments='Host for unit tests', scope='unit tests scope', virtual_host='unittest', note_count=0, vuln_count=0, service_count=1, host_detail_count=0, exploit_attempt_count=0, cred_count=0, detected_arch='', os_family='posix'), host_id=226, port=-1, service_id=251, created_at='2021-04-16T13:47:50.763Z', name='Unit test vuln name', updated_at='2021-04-16T13:47:50.763Z', info='Unit test vuln info', exploited_at=None, vuln_detail_count=0, vuln_attempt_count=0, origin_id=None, origin_type=None, refs=[], module_refs=[])]
 </code></pre>
 
-<img src="images/delete_vuln.png" alt="Delete vuln">
+<img src="https://python-libmsf.github.io/images/delete_vuln.png" alt="Delete vuln">
 
 </details>
 
@@ -628,7 +628,7 @@ Create loot:
 New loot: Msf.Loot(id=61, workspace='test_workspace', workspace_id=-1, host='192.168.1.1', host_id=-1, port=12345, service_id=-1, created_at=None, updated_at=None, ltype='unit.test.type', path='path.txt', data='dGVzdA==', content_type='text/plain', name='/tmp/unit.test', info='Unit test file', module_run_id=None)
 </code></pre>
 
-<img src="images/create_loot.png" alt="Create loot">
+<img src="https://python-libmsf.github.io/images/create_loot.png" alt="Create loot">
 
 </details>
 
@@ -661,7 +661,7 @@ Delete loot:
 Removed loots: [Msf.Loot(id=None, workspace=None, workspace_id=215, host=None, host_id=227, port=-1, service_id=None, created_at=None, updated_at=None, ltype='unit.test.type', path='/Users/vladimir/.msf4/loot/6f8c35d43dc702b3b866-path.txt', data='dGVzdA==', content_type='text/plain', name='/tmp/unit.test', info='Unit test file', module_run_id=None)]
 </code></pre>
 
-<img src="images/delete_loot.png" alt="Delete loot">
+<img src="https://python-libmsf.github.io/images/delete_loot.png" alt="Delete loot">
 
 </details>
 
@@ -729,7 +729,7 @@ Create note:
 New note: Msf.Note(id=40, workspace='test_workspace', workspace_id=-1, host='192.168.1.1', host_id=-1, service_id=-1, created_at=None, updated_at=None, ntype='host.comments', data='Unit test host comment', critical=False, seen=False)
 </code></pre>
 
-<img src="images/create_note.png" alt="Create note">
+<img src="https://python-libmsf.github.io/images/create_note.png" alt="Create note">
 
 </details>
 
@@ -762,7 +762,7 @@ Delete note:
 Removed notes: [Msf.Note(id=40, workspace=None, workspace_id=215, host=None, host_id=227, service_id=None, created_at='2021-04-16T14:03:46.116Z', updated_at='2021-04-16T14:03:46.116Z', ntype='host.comments', data='Unit test host comment', critical=None, seen=None)]
 </code></pre>
 
-<img src="images/delete_note.png" alt="Delete note">
+<img src="https://python-libmsf.github.io/images/delete_note.png" alt="Delete note">
 
 </details>
 
@@ -883,7 +883,7 @@ New cred: Msf.Cred(id=68, workspace_id=215, username='UnitTestUser', private_dat
 New login: Msf.Login(id=78, workspace_id=215, core_id=68, service_id=-1, last_attempted_at='2021-01-01T11:11:11.111Z', address='192.168.1.1', service_name='http', port=12345, protocol='tcp', status='Successful', access_level='admin', public=None, private=None, created_at=None, updated_at=None)
 </code></pre>
 
-<img src="images/create_cred.png" alt="Create cred">
+<img src="https://python-libmsf.github.io/images/create_cred.png" alt="Create cred">
 
 </details>
 
@@ -931,6 +931,6 @@ Removed logins: [Msf.Login(id=78, workspace_id=-1, core_id=68, service_id=252, l
 Removed creds: [Msf.Cred(id=68, workspace_id=215, username=None, private_data=None, private_type=None, jtr_format=None, address=None, port=-1, service_name=None, protocol=None, origin_type='Metasploit::Credential::Origin::Service', module_fullname=None, created_at='2021-04-16T14:15:36.173Z', updated_at='2021-04-16T14:15:36.173Z', origin_id=77, private_id=2, public_id=5, realm_id=None, logins_count=0, logins=None, public=None, private=None, origin=None)]
 </code></pre>
 
-<img src="images/delete_cred.png" alt="Delete cred">
+<img src="https://python-libmsf.github.io/images/delete_cred.png" alt="Delete cred">
 
 </details>

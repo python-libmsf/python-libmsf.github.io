@@ -83,7 +83,9 @@ Start Metasploit web service to listen all network interfaces: `msfdb --componen
 
 <details><summary>Init MSF webservice:</summary>
 
-<pre lang="shell"><code class="shell">$ msfdb --component webservice init
+<div class="highlight highlight-source-shell">
+<pre language="shell">
+<code>$ msfdb --component webservice init
 Running the 'init' command for the webservice:
 [?] Initial MSF web service account username? [user]: user
 [?] Initial MSF web service account password? (Leave blank for random password):
@@ -114,7 +116,9 @@ The username and password are credentials for the API account:
 https://localhost:5443/api/v1/auth/account
 
 ====================================================================
-</code></pre>
+</code>
+</pre>
+</div>
 
 </details>
 
@@ -122,7 +126,7 @@ Metasploit web service user API token stored in file: `~/.msf4/config`
 
 <details><summary>MSF webservice config:</summary>
 
-<pre lang="shell"><code class="shell">$ cat ~/.msf4/config
+<pre language="shell"><code>$ cat ~/.msf4/config
 [framework/database]
 default_db=local-https-data-service
 
@@ -166,7 +170,7 @@ Create workspace:
 
 <details><summary>Example:</summary>
 
-<pre lang="shell"><code class="shell">>>> from libmsf.msf import Msf
+<pre language="shell"><code class="language-shell">>>> from libmsf.msf import Msf
 >>> from libmsf.rest import MsfRestApi
 >>> from typing import List
 >>>

@@ -82,6 +82,7 @@ Init Metasploit web service: `msfdb --component webservice init`
 Start Metasploit web service to listen all network interfaces: `msfdb --component webservice --address 0.0.0.0 start`
 
 <details><summary>Init MSF webservice:</summary>
+
 <pre lang="shell"><code class="shell">$ msfdb --component webservice init
 Running the 'init' command for the webservice:
 [?] Initial MSF web service account username? [user]: user
@@ -113,11 +114,14 @@ The username and password are credentials for the API account:
 https://localhost:5443/api/v1/auth/account
 
 ====================================================================
-</code></pre></details>
+</code></pre>
+
+</details>
 
 Metasploit web service user API token stored in file: `~/.msf4/config`
 
 <details><summary>MSF webservice config:</summary>
+
 <pre lang="shell"><code class="shell">$ cat ~/.msf4/config
 [framework/database]
 default_db=local-https-data-service
@@ -127,7 +131,9 @@ url=https://localhost:5443
 cert=/home/user/.msf4/msf-ws-cert.pem
 skip_verify=true
 api_token=cf2dbb7f9d1f92839a84f9c165ee9afef3dd3a3116bc99badf45be4ae5655168c9c2c3c58621b460
-</code></pre></details>
+</code></pre>
+
+</details>
 
 Metasploit web service swagger page: `https://localhost:5443/api/v1/api-docs`
 
@@ -159,6 +165,7 @@ print(f'Removed workspace: {removed_workspace}\n')
 Create workspace: 
 
 <details><summary>Example:</summary>
+
 <pre lang="shell"><code class="shell">>>> from libmsf.msf import Msf
 >>> from libmsf.rest import MsfRestApi
 >>> from typing import List

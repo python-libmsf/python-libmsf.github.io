@@ -82,8 +82,7 @@ Init Metasploit web service: `msfdb --component webservice init`
 Start Metasploit web service to listen all network interfaces: `msfdb --component webservice --address 0.0.0.0 start`
 
 <details><summary>Init MSF webservice:</summary>
-<pre language="shell"><code>
-$ msfdb --component webservice init
+<pre lang="shell"><code class="shell">$ msfdb --component webservice init
 Running the 'init' command for the webservice:
 [?] Initial MSF web service account username? [user]: user
 [?] Initial MSF web service account password? (Leave blank for random password):
@@ -118,8 +117,8 @@ https://localhost:5443/api/v1/auth/account
 
 Metasploit web service user API token stored in file: `~/.msf4/config`
 
-<details><summary markdown="span">MSF webservice config:</summary><pre><code class="shell">
-$ cat ~/.msf4/config
+<details><summary>MSF webservice config:</summary>
+<pre lang="shell"><code class="shell">$ cat ~/.msf4/config
 [framework/database]
 default_db=local-https-data-service
 
@@ -159,11 +158,8 @@ print(f'Removed workspace: {removed_workspace}\n')
 
 Create workspace: 
 
-<details>
-  <summary markdown="span">Example:</summary>
-
-```shell
->>> from libmsf.msf import Msf
+<details><summary>Example:</summary>
+<pre lang="shell"><code class="shell">>>> from libmsf.msf import Msf
 >>> from libmsf.rest import MsfRestApi
 >>> from typing import List
 >>>
@@ -179,7 +175,7 @@ Create workspace:
 >>> workspace.id = msf_rest_api.create_workspace(workspace=workspace)
 >>> print(f'New workspace: {workspace}\n')
 New workspace: Msf.Workspace(id=210, name='test_workspace', created_at=None, updated_at=None, boundary=None, description=None, owner_id=None, limit_to_network=False, import_fingerprint=False)
-```
+</code></pre>
 
 ![Create workspace](images/create_workspace.png)
 

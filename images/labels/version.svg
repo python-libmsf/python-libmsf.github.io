@@ -14,7 +14,7 @@
     <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110">
         <text x="235" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="350">vesion</text>
         <text x="235" y="140" transform="scale(.1)" textLength="350">vesion</text>
-        <text x="635" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="290">0.1.2</text>
-        <text x="635" y="140" transform="scale(.1)" textLength="290">0.1.2</text>
+        <text x="635" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="290">0.2.1</text>
+        <text x="635" y="140" transform="scale(.1)" textLength="290">0.2.1</text>
     </g>
 </svg>
